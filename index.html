@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smart Shopping Store</title>
   <link rel="stylesheet" href="./css/style.css" />
-  <!-- Latest compiled and minified CSS -->
+  <!-- Latest compiled and minified CSS / bootstrap cdn -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
   <!-- google Montserrat  font  -->
@@ -17,28 +17,27 @@
 </head>
 
 <body>
+  <!-- header starts -->
   <header>
     <h1 class="text-center">Welcome to Smart Shopping Store</h1>
     <h3 class="text-center text-info">Happy Shopping!</h3>
   </header>
+  <!-- main section starts -->
   <main class="main">
     <!-- search box starts -->
-    <div class="search-field">
-      <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
-          Search
-        </button>
-      </div>
+    <div class="search-box">
+      <input id="input-field" class="search-field" type="text" placeholder="Search for products" />
+      <button id="search-btn" class="search-button" onclick="loadProducts()">
+        Search
+      </button>
     </div>
-    <!-- product card starts -->
+    <!-- all product card starts -->
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
         </div>
       </div>
-      <!-- cart starts -->
+      <!-- cart section starts -->
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
         <div class="cart" id="my-cart">
           <table class="table">
@@ -94,7 +93,6 @@
   <footer>
     <p class="text-center my-5">Copyright &copy;2022. All rights reserved</p>
   </footer>
-
   <!-- add javascript  file  -->
   <script src="./js/app.js"></script>
 </body>

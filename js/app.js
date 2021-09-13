@@ -1,12 +1,15 @@
+
+// load data from url
 const loadProducts = () => {
   const url = `https://fakestoreapi.com/products`;
   fetch(url)
     .then((response) => response.json())
     .then((data) => showProducts(data));
 };
-loadProducts();
 
-// show all product in UI 
+loadProducts(); // call the function
+
+// display all products in UI 
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
@@ -30,15 +33,17 @@ const showProducts = (products) => {
   }
 };
 
+// add all prices to the Cart
 let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
   updatePrice("price", price);
   updateTaxAndCharge();
   document.getElementById("total-Products").innerText = count;
-  updateTotal();
+  updateTotal(); // call the function
 };
 
+// convert input values
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
   const converted = parseFloat(element);
