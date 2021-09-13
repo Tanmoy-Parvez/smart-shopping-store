@@ -6,31 +6,33 @@ body {
 
 /* search box styles */
 .search-box {
-  width: 330px;
+  width: 350px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 5px;
   border-radius: 50px;
   border: 1px solid grey;
 }
+
 .search-field{
   padding: 0px 0px 0px 10px;
   outline: none;
   border: none;
 }
+
 /* search btn styles */
 .search-button {
   outline: none;
   border: none;
   padding: 8px 20px;
   border-radius: 50px;
-  margin-left: 48px;
+  margin-left: 68px;
   background-color: #337ab7;
   color: white;
 }
+
 .search-button:hover {
   background-color: #eea236;
- 
 }
 
 /* all products styles */
